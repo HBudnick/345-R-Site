@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Tireless Tutoring — About</title>
+        <style>
+         .grid-container {
+         display: grid;                                  
+         grid-template-areas:
+         "header header"
+         "main main"
+         "footer footer";                              
+         grid-template-columns: 20% 80%;                 
+         grid-template-rows: auto 1fr auto;              
+         height: 100vh;
+         }
+         header   { grid-area: header; padding:15px; }
+         main     { grid-area: main; text-align:center;}
+         footer   { grid-area: footer;  text-align:center; padding:10px; }   
+         #Schedule {
+         background: #eeeeee;
+         padding: 20px;
+         margin: 40px 500px;
+         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+         border-radius: 10px;
+        }
+    </style>
+  </head>
+  <body>
+     <div class="grid-container">
+     <header>
+         <h1>Tireless Tutoring: Navigation</h1>  
+         <nav>                  
+         <a href="index.html">Home</a>
+         <a href="about.html">About</a>   
+         <a href="contact.html">Contact</a>
+         <a href="schedule.html">Staff</a>
+        </nav>
+     </header>
+     <main>
+       <h1>Tutoring Staff</h1>
+       <p1>Below are a list of the professional, certified tutors available to hire through our services and their main subjects of speciality, plus their average rating from our users!</p1>
+       <div id="Schedule">
+       <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7KCqj3qK_Nq8MBNcxoSWEhEk0A0IBhwOhM83OIaNToFcSRZkdVai7L_Q6hMXExH3Fvfq_EHUU7Xx5/pubhtml?gid=0&single=true"
+         width="800"
+         height="400"
+         title="List View Staff Directory">
+       </iframe>
+       <h2>INDIVIDUAL STAFF PROFILE HIGHLIGHT</h2>
+       <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7KCqj3qK_Nq8MBNcxoSWEhEk0A0IBhwOhM83OIaNToFcSRZkdVai7L_Q6hMXExH3Fvfq_EHUU7Xx5/pubhtml?gid=139710125&single=true"
+         width="800"
+         height="400"
+         title="Detail View Staff Profile">
+       </iframe>
+       </div>
+       <p1>All of our tutors are available to meet over any video platform like Microsoft Teams or Zoom or another platform of your choice. In-person availablity depends on user location. Contact us for specific in-person availablity information.</p1>
+     </main>
+     <footer>
+       <p>&copy; 2025 Tireless Tutoring</p>
+    </footer>
+   </div>
+ </body>
+</html>

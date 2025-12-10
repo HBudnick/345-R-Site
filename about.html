@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Tireless Tutoring — About</title>
+    <style>
+     .grid-container {
+      display: grid;                                  
+      grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer";                              
+      grid-template-columns: 20% 80%;                 
+      grid-template-rows: auto 1fr auto;              
+      height: 100vh;
+      }
+     header   { grid-area: header; padding:15px; }
+     aside    { grid-area: sidebar; padding:20px; border: 1px solid #000080; line-height: 1.5; }
+     main     { grid-area: main; text-align:center;}
+     footer   { grid-area: footer;  text-align:center; padding:10px; }
+     #disqus_thread {
+     background: #eeeeee;
+     max-width: 1200px;
+     padding: 20px;
+     margin: 40px auto;
+     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+     border-radius: 10px;
+     }
+    </style>
+  </head>
+  <body>
+   <div class="grid-container">
+   <header>
+    <h1>Tireless Tutoring: Navigation</h1>  
+    <nav>                  
+     <a href="index.html">Home</a>
+     <a href="about.html">About</a>   
+     <a href="contact.html">Contact</a>
+     <a href="schedule.html">Staff</a>
+   </nav>
+   </header>
+   <aside>
+     <h2 style="text-align: center;">Services</h2>
+     <ul> 
+       <li><b>Tutoring</b>: Fill out an application about your tutoring needs, and we can help you connect with an expert in-person or online in a range of fields.</li>
+       <li><b>Testimonials</b>: Check out reviews and videos from past students we have helped discussing how our services and experts helped them.</li>
+       <li><b>Careers</b>: View current job openings with our company and apply to become a part of our team.</li>
+     </ul>
+    </aside>
+   <main>
+     <h1>About Us</h1>
+     <p>   Tireless Tutoring's mission is to help ensure all college students get the help they need to not just pass their classes, but begin to excel in their fields. College students represent our future and we are here to help them. Doing well in your college classes is a first step to doing well in life, and Tireless Tutoring is here to help you take that step.</p>
+     <img src="images/founder.jpg" alt="A man standing upright in business attire" width="400">
+     <h3>Tireless Tutoring founder John Johnson</h3> 
+     <p>   Tireless Tutoring was founded by John Johnson in the year 2000. John saw how the college students at his university struggled with their classwork and never knew who to turn to for help. He knew a service was needed to help connect students who just needed a bit of guidance wtih qualifed experts who knew what they were talking about, and who could provide real genuine support.</p>
+     <h2>Reviews and Customer Feedback</h2>
+     <div id="disqus_thread">
+     <script>
+       var disqus_config = function () {
+       this.page.url = "http://localhost/about.html";
+       this.page.identifier = "my-website.about";
+       };
+       (function() { // DON'T EDIT BELOW THIS LINE
+       var d = document, s = d.createElement('script');
+        s.src = 'https://tirelesstutoring.disqus.com/embed.js';
+       s.setAttribute('data-timestamp', +new Date());
+       (d.head || d.body).appendChild(s);
+       })();
+     </script>
+     </div>
+     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+   </main>
+   <footer>
+      <p>&copy; 2025 Tireless Tutoring</p>
+    </footer>
+   </div>
+ </body>
+</html>

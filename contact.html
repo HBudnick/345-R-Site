@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Tireless Tutoring — Contact</title>
+      <style>
+    .grid-container {
+      display: grid;                                  
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";                              
+      grid-template-columns: 15% 85%;                 
+      grid-template-rows: auto 1fr auto;              
+      height: 100vh;
+    }
+    header   { grid-area: header; padding:15px; }
+    aside    { grid-area: sidebar; padding:20px; border: 1px solid #000080}
+    main     { grid-area: main; padding:20px; text-align:center;}
+    footer   { grid-area: footer;  text-align:center; padding:10px; }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+    <header>
+      <h1>Tireless Tutoring: Navigation</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="schedule.html">Staff</a>
+      </nav>
+    </header>
+    <aside>
+      <h1>Contact Us</h1>    
+      <p>Email: 
+        <a href="mailto:info@mybusiness.com">info@tirelesstutoring.com</a>
+        </p>
+        <p>Phone: 
+        <a href="tel:+12155550123">+1 (555) 555-5555</a>
+        </p>
+        <p>Find us: 
+        <a href="https://www.google.com/maps">Google Maps</a>
+      </p>
+    </aside>
+    <main>
+      <h1>Find us on Google Maps</h1>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6123.9028113946415!2d-75.44337902274327!3d39.875326388411025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6ef560ccc2b0b%3A0x8e728441800ac16f!2sNeumann%20University!5e0!3m2!1sen!2sus!4v1761501201565!5m2!1sen!2sus" 
+       width="800" 
+       height="600" 
+       style="border:0;" 
+       allowfullscreen="" 
+       loading="lazy" 
+       referrerpolicy="no-referrer-when-downgrade">
+     </iframe>
+      <h2> Directions </h2>
+      <p> Directions from [place one]: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      <p> Directions from [place two]: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      <p> Directions from [place three]: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    </main>
+    <footer>
+      <p>&copy; 2025 Tireless Tutoring</p>
+    </footer>
+    </div>
+  </body>
+</html>

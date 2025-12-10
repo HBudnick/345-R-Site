@@ -1,0 +1,125 @@
+<!DOCTYPE html>        
+<html lang="en">         
+  <head>               
+   <meta charset="utf-8">      
+   <meta name="viewport" content="width=device-width, initial-scale=1"> 
+   <link rel="stylesheet" href="style.css">
+   <img src="images/banner.jpg" alt="rows of books on library shelves" width="100%">
+   <title>Tireless Tutoring — Home</title>
+  </head>  
+  <body>
+    <header>
+      <h1>Tireless Tutoring: Navigation</h1>
+      <nav>            
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="schedule.html">Staff</a>
+      </nav>
+    </header>
+    <main>             
+      <h1 style="color: green; text-align: left;">Welcome to Tireless Tutoring</h1>
+      <p>We provide online and in-person tutoring in a variety of subjects to any college students who need our help. Check out table below for some upcoming available tutoring session times.</p>
+      <table>
+         <thead>
+           <tr> 
+            <th scope="col">Tutor</th> 
+            <th scope="col">Dates Available</th>
+            <th scope="col">Subjects Taught</th>
+            </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td scope="row">Mrs. Jenna Graves</td> 
+           <td scope="row">10/10/25, 10/15/25, 10/20/25</td>
+           <td scope="row">Algebra, Calculus, Statistics, Geometry, Trigonometry</td>
+         </tr>
+         <tr>
+           <td scope="row">Mr. Scott Danes</td>
+           <td scope="row">10/12/25, 10/28/25, 11/01/25</td>
+           <td scope="row">Organic Chemistry, Inorganic Chemistry, Environmetnal Sciences, Biology, Microbiology</td>
+        </tr>
+        <tr>
+           <td scope="row">Ms. Tara Strong</td>
+           <td scope="row">10/18/25, 10/20/25, 10/29/25</td>
+           <td scope="row">English, Grammer and Technical Writing, Creative Writing, Rsearch Assistance </td>
+         </tr>
+        </tbody>
+      </table>
+      <p>Interested in learning with us? Create an account to begin today!</p>
+      <form action="#" method="post"> 
+       <label for="name">Name:</label>
+       <input type="text" id="name" name="name" placeholder="Enter your full name" required> 
+       <br><br>
+       <label for="university">University/College Name:</label>
+       <input type="text" id="university" name="university" placeholder="Enter your college/university" required> 
+       <p>Choose your college classification:</p>
+       <input type="radio" id="Freshman" name="year" value="Freshman">
+       <label for="Freshman">Freshman</label>
+       <input type="radio" id="Sophomore" name="year" value="Sophomore">
+       <label for="Sophomore">Sophomore</label>
+       <input type="radio" id="Junior" name="year" value="Junior">
+       <label for="Junior">Junior</label>
+       <input type="radio" id="Senior" name="year" value="Senior">
+       <label for="Senior">Senior</label>
+       <p>What subjects categories are you interested in recieving tutoring for:</p>
+       <input type = "checkbox" id="Subject" value = "English">
+       <label for="English">English</label>
+       <input type = "checkbox" id="Subject" value = "Arts">
+       <label for="Arts">Fine Arts</label>
+       <input type = "checkbox" id="Subject" value = "Foreign">
+       <label for="Foreign">Foreign Language</label>
+       <input type = "checkbox" id="Subject" value = "History">
+       <label for="History">History</label>
+       <input type = "checkbox" id="Subject" value = "Math">
+       <label for="Math">Mathematics</label>
+       <input type = "checkbox" id="Subject" value = "Science">
+       <label for="Science">Science</label>
+       <input type = "checkbox" id="Subject" value = "Social">
+       <label for="Social">Social Science</label>
+       <input type = "checkbox" id="Subject" value = "Other">
+       <label for="Other">Other</label>
+        <br><br>
+       <label for="format">Select your preferred learning format</label>
+       <select id="format"name="format">
+       <option value="In-Person">In-Person</option>
+       <option value="online">Online (Teams, Zoom, etc.)</option>
+       <option value="Hybrid">In-Person/Online hybrid</option>
+       <option value="None">No Preference</option>
+       </select>
+       <br><br>
+       <label for="phone">Phone Number:</label>
+       <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="enter 10 digits only"> 
+       <br><br>
+       <label for="email">Email:</label>
+       <input type="email" id="email" name="email" placeholder="example@email.com" required>
+       <br><br>
+       <label for="password">Password:</label>
+       <input type="password" id="password" name="password" minlength="8" placeholder="Enter a password" required> 
+       <br><br>
+       <button type="submit">Create Account</button>
+       </form>
+      <p>Learn more on our <a href="about.html">About</a> page.</p>
+      <img src="images/placeholder.jpg" alt="Student at desk with laptop working with tutor over the internet">
+    </main>
+    <footer>           
+      <p>&copy; 2025 Tireless Tutoring</p>
+    </footer>
+    <script>
+      const form = document.querySelector("form");
+
+      form.addEventListener("submit", function(event) {
+      const email = document.getElementById("email").value.trim();
+
+    if (!email.includes("@") || !email.includes(".")) {
+      alert("Please enter a valid email address (must contain '@' and a domain).");
+      event.preventDefault(); 
+      return;
+    }
+
+     alert("Account Created!");
+  });
+  </script>
+  </div>
+  </body>
+</html>
